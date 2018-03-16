@@ -9,6 +9,31 @@ module.exports = {
 
   attributes: {
 
+  	id: {
+  		type: "integer"
+  	},
+
+  	name: {
+  		type: "string"
+  	},
+
+  	reg: {
+  		type: "string"
+  	},
+
+  	phno: {
+  		type: "string"
+  	},
+
+	email: {
+  		type: "string"
+  	},
+
+	slot: {
+  		type: "json"
+  	}
+
+
   }
 };
 
