@@ -32,6 +32,28 @@ module.exports.connections = {
     adapter: 'sails-disk'
   },
 
+  heroku_postgres: {
+    adapter: 'sails-postgresql',
+    url: process.env.DATABASE_URL,
+    ssl: true
+  },
+
+  /***************************************************************************
+  *                                                                          *
+  * MySQL is the world's most popular relational database.                   *
+  * http://en.wikipedia.org/wiki/MySQL                                       *
+  *                                                                          *
+  * Run: npm install sails-mysql@for-sails-0.12 --save                       *
+  *                                                                          *
+  ***************************************************************************/
+  MysqlServer: {
+    adapter: 'sails-mysql',
+    host: 'localhost',
+    user: 'root', //optional
+    password: 'root', //optional
+    database: 'freeslot' //optional
+  },
+
   /***************************************************************************
   *                                                                          *
   * MySQL is the world's most popular relational database.                   *
