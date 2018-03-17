@@ -2,7 +2,7 @@
   "name": "freeslot",
   "private": true,
   "version": "1.0.2",
-  "description": "a Sails application",
+  "description": "Application to get and manage free slots of Team members",
   "keywords": [],
   "dependencies": {
     "ejs": "^2.5.7",
@@ -33,9 +33,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/autoslot.git"
+    "url": "https://github.com/awasthishubh/freeslot-backend.git"
   },
-  "author": "anonymous node/sails user",
+  "author": "github.com/awasthishubh/",
   "license": "ISC",
   "devDependencies": {}
 }
