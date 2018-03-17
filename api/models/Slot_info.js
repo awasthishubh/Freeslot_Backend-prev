@@ -36,7 +36,7 @@ module.exports = {
   	},
 
   	freeSlot: {
-  		type: "json"
+  		type: "array"
   	}
 
   }
