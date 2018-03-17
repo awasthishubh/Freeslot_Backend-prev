@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Code2Create Music</title>
+
+</head>
+<body>
+
+<button id="z">asd</button>
+<input type="text" name="xc" value="qwe" id="x">
+<div id="q"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$('#z').click(function(){
+    console.log("Inside fn");
+    $.ajax({
+        type:'POST',
+        url:'http://localhost:1337/getreq',
+        data: { 
+        	
+        	"slot": "48"
+        },
+        beforeSend: function() {
+            $("#z").hide();
+            console.log("begoresend");
+        }
+    }).done(function(data){
+        console.log("sent");
+        console.log(data);
+        $("#z").show();
+    }).catch(function(err){
+        $("#z").show();
+        console.log(err);
+    });
+});
+</script>
+</body>
+</html>

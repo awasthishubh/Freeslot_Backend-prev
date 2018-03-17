@@ -10,7 +10,9 @@ module.exports = {
   attributes: {
 
   	id: {
-  		type: "integer"
+  		type: 'integer',
+    	autoIncrement: true,
+  		primaryKey:true
   	},
 
   	name: {
@@ -31,8 +33,11 @@ module.exports = {
 
 	slot: {
   		type: "json"
-  	}
+  	},
 
+  	freeSlot: {
+  		type: "json"
+  	}
 
   }
 };
