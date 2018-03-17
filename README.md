@@ -1,3 +1,5 @@
-# autoslot
+# FreeSlot
 
-a [Sails](http://sailsjs.org) application
+Application to get and manage free slots of Team members
+
+https://slotfree.herokuapp.com/
