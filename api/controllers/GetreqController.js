@@ -21,7 +21,7 @@ module.exports = {
 
 			});
 
-			if(!slot) return res.json(records);
+			if(!slot) return res.json({records,"status":0});
 			else if(data.length==0) return res.json({data:data, status: 0,msg:'No one\'s free'});
 			else return res.json({data:data, status: 1});
 		});

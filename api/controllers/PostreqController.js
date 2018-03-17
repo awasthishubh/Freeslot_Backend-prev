@@ -37,7 +37,7 @@ module.exports = {
 		  else
 		  	Slot_info.create({'name':name, 'reg':reg, 'phno':phno, 'email':email, 'slot':k, 'freeSlot':freeSlot}).exec(function(err, record){
 			if(err) return res.json(500,{message:'No Idea'});
-			return res.json(200,{message:record, status:1});
+			return res.json(200,{data:record, status:1});
 			});
 		});
 
