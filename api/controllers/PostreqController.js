@@ -15,8 +15,8 @@ module.exports = {
 		email=req.param('email');
 		slot=req.param('slot');
 
-		if(!email || !reg || !phno || !phno || !phno || !email || !slot) return res.json(500, {err:"Incomplete Request"});
-		if(typeof(slot)!="object") return res.json(500, {err:"Invalid Slot format"});
+		if(!email || !reg || !phno || !phno || !phno || !email || !slot || !name) return res.json({err:"Incomplete Request",status:0});
+		if(typeof(slot)!="object") return res.json({err:"Invalid Slot format", status:0});
 
 		var k=[];
 

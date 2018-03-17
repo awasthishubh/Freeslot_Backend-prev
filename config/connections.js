@@ -32,11 +32,18 @@ module.exports.connections = {
     adapter: 'sails-disk'
   },
 
+  // heroku_postgres: {
+  //   adapter: 'sails-postgresql',
+  //   url: "postgres://whwznvrkpiyvas:e30be886c94b3d9f2f0d2dd45dd4179c9dbee77c96777abfa58def563df56acc@ec2-54-83-58-222.compute-1.amazonaws.com:5432/df8jm6376k7u11",
+  //   ssl: true
+  // },
+
   heroku_postgres: {
     adapter: 'sails-postgresql',
-    url: "postgres://whwznvrkpiyvas:e30be886c94b3d9f2f0d2dd45dd4179c9dbee77c96777abfa58def563df56acc@ec2-54-83-58-222.compute-1.amazonaws.com:5432/df8jm6376k7u11",
+    url: process.env.DATABASE_URL,
     ssl: true
   },
+
 
   /***************************************************************************
   *                                                                          *
